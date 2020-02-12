@@ -1,0 +1,216 @@
+OPTIMIZING REDUX STORE
+
+Introduction
+Example Application
+Improving Lookups (For the `values` Array)
+Improving Selectors (Memoization)
+Conclusion
+
+REUSABLE COMPONENTS WITH REACT AND REDUX
+
+Introduction
+"Noogle" - The Search Engine
+Creating the App
+Conclusion
+
+CENTRALIZED ERROR HANDING WITH REACT AND REDUX
+
+Introduction
+The Design
+Response Object Shape
+Structuring the API Calls
+The Error Reducer
+Manually Triggering Errors
+Displaying Errors
+Conclusion
+
+
+FIRING REDUX ACTIONS ON ROUTE TRANSITIONS
+
+Introduction
+Using Component Life Cycle
+Using an Event Listener
+Conclusion
+
+HOW TO USE REACT BOOTSTRAP WITH REDUX
+
+Introduction
+React-Bootstrap
+Example
+LoginForm Component
+Building the Store
+Wrapping Root Component with Provider
+Connecting <LoginForm /> Component with Redux
+Complete Source Code
+Conclusion
+
+CODE-SPLITTING REDUX APPLICATION
+
+Introduction
+What is Code-splitting?
+Code-splitting in a react component
+Route based code splitting
+Code- splitting with Redux
+Conclusion
+
+HOW TO CONNECT REDUX TO A GRANDCHILD COMPONENT
+
+Introduction
+Wrapping Root Component with <Provider />
+Building our Components
+GrandChild.js
+Parent.js
+Finishing Up the Reducer
+Complete Source Code
+Conclusion
+All you need to know about Axios
+Submit Form in React without jQuery AJAX
+Formspree AJAX with ES6
+How to Create a Single Page React.js Page App with Different CSS for Each View
+How to Use React Bootstrap with Redux
+How to Input Validation setTimeout in Reactjs
+
+SIMPLIFYING REDUX BINDINGS WITH REACT HOOKS
+
+Introduction
+React Hooks
+Redux Hooks
+Back to Todo+
+Conclusion
+
+HOW TO TRIGGER A FORM SUBMIT IN CHILD COMPONENT WITH REDUX
+
+Introduction
+Building the Form Component
+The Reducer
+Wrapping Root with <Provider />
+Triggering Form Submission from Another Component
+Complete Source Code
+Conclusion
+
+BUILDING A REDUX APPLICATION WITH ANGULAR 2 - PART 1
+
+Introduction
+Main concepts of Redux
+Redux in practice
+Component structure
+Utilizing the asyncPipe
+Conclusion
+
+BUILDING A REDUX APPLICATION WITH ANGULAR 2 - PART 2
+
+What we did last time
+Restructuring
+Adapting the reducer function
+Getting state slices
+Adding a new state
+Currencies component
+Effects
+Taking advantage of the reactive state
+Conclusion
+
+
+UI STATE MANAGEMENT WITH REDUX IN ANGULAR 4
+
+Introduction
+Taming your application UI layout
+Setup
+Installing
+Setting up the application store and meta reducer
+Modals
+Sidebar(s)
+Dismissable Alerts
+Window size
+Server-side Pagination
+Conclusion
+
+DECIDING WHEN TO CONNECT YOUR COMPONENT TO THE REDUX STORE
+
+Introduction
+ToDo++
+The Boilerplate
+Building the Text-only Todo
+Extending Todo: Adding checkbox Item
+Thinking Process
+Conclusion
+
+
+HOW TO TRANSITION TO ANOTHER ROUTE ON SUCCESSFUL ASYNC REDUX ACTION
+
+Introduction
+Action Creators and Reducer
+The Registration Form
+Redux Middlewares
+Main App Component
+Conclusion
+
+HOW TO WIRE UP REDUX-FORM BINDINGS TO THE FORM'S INPUTS
+
+Introduction
+What is Redux-Form?
+Wire Up Redux-Form with Form Inputs
+Store and Redux-Form Configuration
+Form Component
+Creating Generic Input Control
+Form Validation
+Conclusion
+
+HOW TO FIRE PERIODIC ACTIONS USING SETTIMEOUT AND DISPATCHER IN REDUX
+
+Introduction
+Writing the Reducer
+The QuoteChanger Component
+The Root Component
+Complete Source Code
+Summary
+
+HOW TO WIRE UP REDUX-FORM BINDINGS TO THE FORM'S INPUTS
+
+Introduction
+What is Redux-Form?
+Wire Up Redux-Form with Form Inputs
+Store and Redux-Form Configuration
+Form Component
+Creating Generic Input Control
+Form Validation
+Conclusion
+
+HOW TO FIRE PERIODIC ACTIONS USING SETTIMEOUT AND DISPATCHER IN REDUX
+
+Introduction
+Writing the Reducer
+The QuoteChanger Component
+The Root Component
+Complete Source Code
+Summary
+
+HOW TO WRITE A REDUX REDUCER
+
+Introduction
+Pure Function
+Actions
+State
+Action Types
+The Reducer
+Adding to an Array
+Conclusion
+
+DEEPLY NESTED OBJECTS AND REDUX
+
+Introduction
+Redux State Best Practices
+Using Nested Reducers
+Conclusion
+
+HOW TO STRUCTURE REDUX COMPONENTS AND CONTAINERS
+
+Introduction
+What is Redux?
+What is React-Redux?
+Structure the Redux Components and Containers
+Action Types
+Actions
+Components
+Containers
+Reducers
+Conclusion
