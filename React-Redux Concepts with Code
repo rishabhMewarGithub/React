@@ -1,4 +1,32 @@
-OPTIMIZING REDUX STORE
+1: HOW TO STRUCTURE REDUX COMPONENTS AND CONTAINERS
+
+Introduction
+What is Redux?
+What is React-Redux?
+Structure the Redux Components and Containers
+Action Types
+Actions
+Components
+Containers
+Reducers
+Conclusion
+
+2: HOW TO NEST SMART COMPONENTS IN REDUX
+The Problem
+The Solution
+Wrap the Root Component with <Provider />
+
+3: DIFFERENT WAYS TO DISPATCH ACTIONS WITH REDUX
+
+Introduction
+Passing dispatch method to our component
+Using React-Redux to make dumb/smart components
+Dispatch actions using Redux-saga library
+Passing callback function to our child component
+Using the bindActionCreators method
+Conclusion
+
+4: OPTIMIZING REDUX STORE
 
 Introduction
 Example Application
@@ -6,14 +34,14 @@ Improving Lookups (For the `values` Array)
 Improving Selectors (Memoization)
 Conclusion
 
-REUSABLE COMPONENTS WITH REACT AND REDUX
+5: REUSABLE COMPONENTS WITH REACT AND REDUX
 
 Introduction
 "Noogle" - The Search Engine
 Creating the App
 Conclusion
 
-CENTRALIZED ERROR HANDING WITH REACT AND REDUX
+6: CENTRALIZED ERROR HANDING WITH REACT AND REDUX
 
 Introduction
 The Design
@@ -25,14 +53,14 @@ Displaying Errors
 Conclusion
 
 
-FIRING REDUX ACTIONS ON ROUTE TRANSITIONS
+7: FIRING REDUX ACTIONS ON ROUTE TRANSITIONS
 
 Introduction
 Using Component Life Cycle
 Using an Event Listener
 Conclusion
 
-HOW TO USE REACT BOOTSTRAP WITH REDUX
+8: HOW TO USE REACT BOOTSTRAP WITH REDUX
 
 Introduction
 React-Bootstrap
@@ -44,7 +72,7 @@ Connecting <LoginForm /> Component with Redux
 Complete Source Code
 Conclusion
 
-CODE-SPLITTING REDUX APPLICATION
+9: CODE-SPLITTING REDUX APPLICATION
 
 Introduction
 What is Code-splitting?
@@ -53,7 +81,7 @@ Route based code splitting
 Code- splitting with Redux
 Conclusion
 
-HOW TO CONNECT REDUX TO A GRANDCHILD COMPONENT
+10: HOW TO CONNECT REDUX TO A GRANDCHILD COMPONENT
 
 Introduction
 Wrapping Root Component with <Provider />
@@ -70,7 +98,7 @@ How to Create a Single Page React.js Page App with Different CSS for Each View
 How to Use React Bootstrap with Redux
 How to Input Validation setTimeout in Reactjs
 
-SIMPLIFYING REDUX BINDINGS WITH REACT HOOKS
+11: SIMPLIFYING REDUX BINDINGS WITH REACT HOOKS
 
 Introduction
 React Hooks
@@ -78,7 +106,7 @@ Redux Hooks
 Back to Todo+
 Conclusion
 
-HOW TO TRIGGER A FORM SUBMIT IN CHILD COMPONENT WITH REDUX
+12: HOW TO TRIGGER A FORM SUBMIT IN CHILD COMPONENT WITH REDUX
 
 Introduction
 Building the Form Component
@@ -88,7 +116,7 @@ Triggering Form Submission from Another Component
 Complete Source Code
 Conclusion
 
-BUILDING A REDUX APPLICATION WITH ANGULAR 2 - PART 1
+13: BUILDING A REDUX APPLICATION WITH ANGULAR 2 - PART 1
 
 Introduction
 Main concepts of Redux
@@ -97,7 +125,7 @@ Component structure
 Utilizing the asyncPipe
 Conclusion
 
-BUILDING A REDUX APPLICATION WITH ANGULAR 2 - PART 2
+14: BUILDING A REDUX APPLICATION WITH ANGULAR 2 - PART 2
 
 What we did last time
 Restructuring
@@ -109,8 +137,7 @@ Effects
 Taking advantage of the reactive state
 Conclusion
 
-
-UI STATE MANAGEMENT WITH REDUX IN ANGULAR 4
+15: UI STATE MANAGEMENT WITH REDUX IN ANGULAR 4
 
 Introduction
 Taming your application UI layout
@@ -124,7 +151,7 @@ Window size
 Server-side Pagination
 Conclusion
 
-DECIDING WHEN TO CONNECT YOUR COMPONENT TO THE REDUX STORE
+16: DECIDING WHEN TO CONNECT YOUR COMPONENT TO THE REDUX STORE
 
 Introduction
 ToDo++
@@ -134,8 +161,7 @@ Extending Todo: Adding checkbox Item
 Thinking Process
 Conclusion
 
-
-HOW TO TRANSITION TO ANOTHER ROUTE ON SUCCESSFUL ASYNC REDUX ACTION
+17: HOW TO TRANSITION TO ANOTHER ROUTE ON SUCCESSFUL ASYNC REDUX ACTION
 
 Introduction
 Action Creators and Reducer
@@ -144,7 +170,7 @@ Redux Middlewares
 Main App Component
 Conclusion
 
-HOW TO WIRE UP REDUX-FORM BINDINGS TO THE FORM'S INPUTS
+18: HOW TO WIRE UP REDUX-FORM BINDINGS TO THE FORM'S INPUTS
 
 Introduction
 What is Redux-Form?
@@ -155,7 +181,7 @@ Creating Generic Input Control
 Form Validation
 Conclusion
 
-HOW TO FIRE PERIODIC ACTIONS USING SETTIMEOUT AND DISPATCHER IN REDUX
+19: HOW TO FIRE PERIODIC ACTIONS USING SETTIMEOUT AND DISPATCHER IN REDUX
 
 Introduction
 Writing the Reducer
@@ -164,7 +190,7 @@ The Root Component
 Complete Source Code
 Summary
 
-HOW TO WIRE UP REDUX-FORM BINDINGS TO THE FORM'S INPUTS
+20: HOW TO WIRE UP REDUX-FORM BINDINGS TO THE FORM'S INPUTS
 
 Introduction
 What is Redux-Form?
@@ -175,7 +201,7 @@ Creating Generic Input Control
 Form Validation
 Conclusion
 
-HOW TO FIRE PERIODIC ACTIONS USING SETTIMEOUT AND DISPATCHER IN REDUX
+21: HOW TO FIRE PERIODIC ACTIONS USING SETTIMEOUT AND DISPATCHER IN REDUX
 
 Introduction
 Writing the Reducer
@@ -184,7 +210,7 @@ The Root Component
 Complete Source Code
 Summary
 
-HOW TO WRITE A REDUX REDUCER
+22: HOW TO WRITE A REDUX REDUCER
 
 Introduction
 Pure Function
@@ -195,22 +221,11 @@ The Reducer
 Adding to an Array
 Conclusion
 
-DEEPLY NESTED OBJECTS AND REDUX
+23: DEEPLY NESTED OBJECTS AND REDUX
 
 Introduction
 Redux State Best Practices
 Using Nested Reducers
 Conclusion
 
-HOW TO STRUCTURE REDUX COMPONENTS AND CONTAINERS
 
-Introduction
-What is Redux?
-What is React-Redux?
-Structure the Redux Components and Containers
-Action Types
-Actions
-Components
-Containers
-Reducers
-Conclusion
