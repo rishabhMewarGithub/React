@@ -1,0 +1,147 @@
+/****** 1: HOW TO STRUCTURE REDUX COMPONENTS AND CONTAINERS****************/
+
+//1.a Structure the Redux Components and Containers
+actiontypes/
+    index.js
+actions/
+    EmployeeActions.js
+    StudentActions.js
+    AdminActions.js
+components/
+    Header.js
+    Footer.js
+    Logo.js
+    EmployeeList.js
+    StudentList.js
+    AdminList.js
+    EmployeeDetails.js
+    StudentDetails.js
+    AdminDetails.js
+    FormValidationHelper.js
+    ModalComponent.js
+    Notification.js
+    ButtonToolbar.js
+containers/
+    App.js
+    Employee.js
+    Student.js
+    Admin.js
+    Dashboard.js
+reducers/
+    index.js
+    employee.js
+    student.js
+    admin.js
+
+//1.b Action Types
+export const FETCH_BLOGS = 'FETCH_BLOGS';
+export const FETCH_BLOG_DETAILS = 'FETCH_BLOG_DETAILS';
+export const CHANGE_PAGINATE = 'CHANGE_PAGINATE';
+
+//Actions
+import { FETCH_BLOGS, FETCH_BLOG_DETAILS, CHANGE_PAGINATE } from '../actiontypes'
+import axios from 'axios';
+
+// Base URL fot the JSON API 
+const ROOT_URL = 'http://localhost:3000/blogs';
+
+// To fetch the blog list
+export function fetchBlogs(paginate, category, sortby) {
+    let request, url;
+    url = `${ROOT_URL}?_page=${paginate.page}&_limit=${paginate.pageSize}`
+    if ((typeof category !== "undefined")) {
+        url += `&category=${category}`
+    }
+    if ((typeof sortby !== "undefined")) {
+        url += `&_sort=${sortby}`
+    }
+    request = axios.get(url);
+
+    return {
+        type: FETCH_BLOGS,
+        payload: request
+    };
+};
+
+//1.c Containers
+import React, { Component } from "react";
+import { connect } from 'react-redux';
+import { Container, Row, Col, Button, Label, Input, FormGroup } from 'reactstrap';
+import { fetchBlogs, fetchBlogDetails, changePaginate } from '../actions'
+import moment from 'moment';
+
+class BlogList extends Component {
+    constructor() {
+        super();
+        this.state = {
+            isMoreArticlesAvailable: true
+        };
+    }
+    // componentDidMount is used to call the action
+    componentDidMount() {
+        const { paginate, categoty } = this.props;
+        localStorage.setItem('paginate', JSON.stringify(paginate))
+        this.props.fetchBlogs(paginate, categoty, paginate && paginate.sortBy)
+    }
+
+    render() {
+        const { blogs, title } = this.props;
+        return (
+            <Container>
+                // List of blogs
+            </Container>
+        );
+    }
+}
+
+const mapStateToProps = state => {
+    return {
+        blogs: state.blogs.all,
+        paginate: state.blogs.paginate,
+        totalCount: state.blogs.totalCount
+    }
+}
+// mapDispatchToProps is used to initiate or dispatch the action and returns a callback function
+const mapDispatchToProps = dispatch => ({
+    fetchBlogs: (paginate, category, sortingby) => {
+        dispatch(fetchBlogs(paginate, category, sortingby));
+    },
+    fetchBlogDetails: (id, paginate) => {
+        dispatch(fetchBlogDetails(id, paginate));
+    },
+    changePaginate: (paginate) => {
+        dispatch(changePaginate(paginate));
+    },
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(BlogList);
+
+//1.d Reducers
+import { FETCH_BLOGS, FETCH_BLOG_DETAILS, CHANGE_PAGINATE } from '../actiontypes';
+
+const INITIAL_STATE = {
+    all: [],
+    blog: null,
+    paginate: {
+        page: 1,
+        pageSize: 4,
+        filter: '',
+        sortBy: ''
+    },
+    totalCount: 12
+};
+
+export default function (state = INITIAL_STATE, action) {
+    switch (action.type) {
+        case FETCH_BLOG_DETAILS:
+            return { ...state, blog: action.payload.data };
+        case FETCH_BLOGS:
+            return { ...state, all: action.payload.data }
+        case CHANGE_PAGINATE:
+            const paginate = { ...action.payload }
+            return { ...state, paginate }
+        default:
+            return state;
+    }
+}
+
